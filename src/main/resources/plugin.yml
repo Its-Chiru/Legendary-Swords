@@ -1,0 +1,4 @@
+name: LegendarySwords
+version: '${project.version}'
+main: chiru.legendary_swords.LegendarySwords
+api-version: '1.20'
