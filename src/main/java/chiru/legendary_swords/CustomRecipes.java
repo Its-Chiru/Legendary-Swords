@@ -25,6 +25,9 @@ public class CustomRecipes {
         // Increase damage (modify as needed)
         upgraded_diamond_meta.addAttributeModifier(Attribute.GENERIC_ATTACK_DAMAGE, new AttributeModifier(UUID.randomUUID(),"DamageModifier",8.5, AttributeModifier.Operation.ADD_NUMBER, EquipmentSlot.HAND));
 
+        // Set attack speed
+        upgraded_diamond_meta.addAttributeModifier(Attribute.GENERIC_ATTACK_SPEED, new AttributeModifier(UUID.randomUUID(),"SpeedModifier", -2,AttributeModifier.Operation.ADD_NUMBER, EquipmentSlot.HAND));
+
         // Create lore as a list of strings
         List<String> lore = new ArrayList<>();
         lore.add("Upgraded Diamond Sword!");
@@ -61,6 +64,10 @@ public class CustomRecipes {
         // Increase damage (modify as needed)
         upgraded_gold_meta.addAttributeModifier(Attribute.GENERIC_ATTACK_DAMAGE, new AttributeModifier(UUID.randomUUID(),"DamageModifier",7.5, AttributeModifier.Operation.ADD_NUMBER, EquipmentSlot.HAND));
 
+        // Set attack speed
+        upgraded_gold_meta.addAttributeModifier(Attribute.GENERIC_ATTACK_SPEED, new AttributeModifier(UUID.randomUUID(),"SpeedModifier", -2,AttributeModifier.Operation.ADD_NUMBER, EquipmentSlot.HAND));
+
+
         // Create lore as a list of strings
         List<String> lore2 = new ArrayList<>();
         lore2.add("Upgraded Gold Sword!");
@@ -95,6 +102,9 @@ public class CustomRecipes {
         // Increase damage (modify as needed)
         redstone_s_meta.addAttributeModifier(Attribute.GENERIC_ATTACK_DAMAGE, new AttributeModifier(UUID.randomUUID(),"DamageModifier",6.5, AttributeModifier.Operation.ADD_NUMBER, EquipmentSlot.HAND));
 
+        // Set attack speed
+        redstone_s_meta.addAttributeModifier(Attribute.GENERIC_ATTACK_SPEED, new AttributeModifier(UUID.randomUUID(),"SpeedModifier", -2,AttributeModifier.Operation.ADD_NUMBER, EquipmentSlot.HAND));
+
         // Create lore as a list of strings
         List<String> lore3 = new ArrayList<>();
         lore3.add("A Redstone Sword!");
@@ -128,6 +138,9 @@ public class CustomRecipes {
 
         // Increase damage (modify as needed)
         emerald_s_meta.addAttributeModifier(Attribute.GENERIC_ATTACK_DAMAGE, new AttributeModifier(UUID.randomUUID(),"DamageModifier",7, AttributeModifier.Operation.ADD_NUMBER, EquipmentSlot.HAND));
+
+        // Set attack speed
+        emerald_s_meta.addAttributeModifier(Attribute.GENERIC_ATTACK_SPEED, new AttributeModifier(UUID.randomUUID(),"SpeedModifier", -2,AttributeModifier.Operation.ADD_NUMBER, EquipmentSlot.HAND));
 
         // Create lore as a list of strings
         List<String> lore4 = new ArrayList<>();

@@ -26,7 +26,7 @@ public final class LegendarySwords extends JavaPlugin {
 
         //Register Events
         getServer().getPluginManager().registerEvents(new ItemEquiped(), this);
-        getServer().getPluginManager().registerEvents(new EntityDamaged(), this);
+        getServer().getPluginManager().registerEvents(new EntityDamaged(this), this);
         getServer().getPluginManager().registerEvents(new Enter(), this);
 
     }
