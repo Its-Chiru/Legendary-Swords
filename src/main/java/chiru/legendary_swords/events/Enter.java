@@ -12,7 +12,7 @@ public class Enter implements Listener {
     public void playerEntered(PlayerJoinEvent event){
         Player player = event.getPlayer();
 
-        String texturePack = "https://download.mc-packs.net/pack/63af22dfb70aab544ae338f8687bf17d8423761a.zip";
+        String texturePack = "https://download.mc-packs.net/pack/551fb44d14722518f2c3cde5949f4c274008547a.zip";
 
         player.setResourcePack(texturePack);
     }

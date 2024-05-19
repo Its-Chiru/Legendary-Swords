@@ -55,6 +55,14 @@ public class ItemEquiped implements Listener {
                 player.removePotionEffect(PotionEffectType.LUCK);
                 player.removePotionEffect(PotionEffectType.HERO_OF_THE_VILLAGE);
             }
+
+            //Obsidian Sword Effects
+            if (heldItem.getItemMeta().getDisplayName().equalsIgnoreCase( ChatColor.DARK_PURPLE + "" + ChatColor.BOLD + "Obsidian Sword")) {
+                player.addPotionEffect(new PotionEffect(PotionEffectType.SLOW, Integer.MAX_VALUE, 2));
+            }
+            else {
+                player.removePotionEffect(PotionEffectType.SLOW);
+            }
         }
     }
 }

@@ -167,5 +167,40 @@ public class CustomRecipes {
         // Register the recipe
         Bukkit.addRecipe(emerald_s_recipe);
 
+        // Obsidian Sword
+        ItemStack obsidian_s = new ItemStack(Material.IRON_SWORD);
+        ItemMeta obsidian_s_meta = obsidian_s.getItemMeta();
+        obsidian_s_meta.setDisplayName(ChatColor.DARK_PURPLE + "" + ChatColor.BOLD + "Obsidian Sword");
+
+        // Increase damage (modify as needed)
+        obsidian_s_meta.addAttributeModifier(Attribute.GENERIC_ATTACK_DAMAGE, new AttributeModifier(UUID.randomUUID(),"DamageModifier",9, AttributeModifier.Operation.ADD_NUMBER, EquipmentSlot.HAND));
+
+        // Set attack speed
+        obsidian_s_meta.addAttributeModifier(Attribute.GENERIC_ATTACK_SPEED, new AttributeModifier(UUID.randomUUID(),"SpeedModifier", -3,AttributeModifier.Operation.ADD_NUMBER, EquipmentSlot.HAND));
+
+        // Create lore as a list of strings
+        List<String> lore5 = new ArrayList<>();
+        lore5.add("An obisidan Sword!");
+        lore5.add(ChatColor.GRAY+""+ChatColor.ITALIC+"When in hand - SLOWNESS");
+
+        // Set the lore
+        obsidian_s_meta.setLore(lore5);
+
+        //Custom Model Data
+        obsidian_s_meta.setCustomModelData(4);
+
+        obsidian_s.setItemMeta(obsidian_s_meta);
+
+        //Recipe
+        ShapedRecipe obsidian_s_recipe = new ShapedRecipe(new NamespacedKey(thisPlugin, "obsidian_s_recipe"), obsidian_s);
+        obsidian_s_recipe.shape("OOO", "OSO", "OOO");
+
+        // Set ingredients
+        obsidian_s_recipe.setIngredient('O', Material.OBSIDIAN);
+        obsidian_s_recipe.setIngredient('S', Material.WOODEN_SWORD);
+
+        // Register the recipe
+        Bukkit.addRecipe(obsidian_s_recipe);
+
     }
 }
